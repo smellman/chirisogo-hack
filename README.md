@@ -9,7 +9,8 @@
 現時点の著者は以下の通り。
 
 - Taro Matsuzawa: OSGeo.JP/OSMFJ/jus/Georepublic [twitter](https://twitter.com/smellman)
-
+- 西澤利治
+- Rikutaro MANABE
 
 ## 本レポジトリについて
 
@@ -24,3 +25,7 @@ npm install
 npx honkit serve
 npx honkit build
 ```
+
+## コミュニケーションチャンネル
+
+CodeforJapan slack `#proj-chirisogo`
