@@ -1,0 +1,634 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>QGISで扱えるデータ形式について · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.23">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="project-file.html" />
+    
+    
+    <link rel="prev" href="opensource.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    地理総合をハックしよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">QGIS事始め</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    QGISについて
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="opensource.html">
+            
+                <a href="opensource.html">
+            
+                    
+                    オープンソースとは何か
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3" data-path="data-format.html">
+            
+                <a href="data-format.html">
+            
+                    
+                    QGISで扱えるデータ形式について
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="project-file.html">
+            
+                <a href="project-file.html">
+            
+                    
+                    QGISのプロジェクトファイルについて
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="tile.html">
+            
+                <a href="tile.html">
+            
+                    
+                    地理院地図とオープンストリートマップ(地図タイル)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="projection.html">
+            
+                <a href="projection.html">
+            
+                    
+                    投影法について
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">ハザードマップ</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../hazardmap/city-analytics.html">
+            
+                <a href="../hazardmap/city-analytics.html">
+            
+                    
+                    都市計画基礎調査データ分析例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">estatのデータを使う</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../e-stat/about.html">
+            
+                <a href="../e-stat/about.html">
+            
+                    
+                    e-Statについて
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../e-stat/analytics-geography.html">
+            
+                <a href="../e-stat/analytics-geography.html">
+            
+                    
+                    統計データと地理データの結合
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">歴史関係とQGIS</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../histrical/blank-map.html">
+            
+                <a href="../histrical/blank-map.html">
+            
+                    
+                    世界地図の白地図
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDGs</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../SDGs/about.html">
+            
+                <a href="../SDGs/about.html">
+            
+                    
+                    SDGsについて
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">3D都市データ</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../3d-city/plateau.html">
+            
+                <a href="../3d-city/plateau.html">
+            
+                    
+                    Plateau
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">もっと詳しくQGIS</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="csvt.html">
+            
+                <a href="csvt.html">
+            
+                    
+                    CSVT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="charactor.html">
+            
+                <a href="charactor.html">
+            
+                    
+                    文字コード
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">参考資料</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../appendix/book.html">
+            
+                <a href="../appendix/book.html">
+            
+                    
+                    参考文献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="../appendix/web.html">
+            
+                <a href="../appendix/web.html">
+            
+                    
+                    Web
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >QGISで扱えるデータ形式について</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="qgisで扱えるデータ形式について">QGISで扱えるデータ形式について</h2>
+<p>QGISでは様々なデータを扱うことができます。</p>
+<p>次の表ではそれぞれの特徴を簡単に示しています。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>ESRI Shapefile</th>
+<th>GeoPackage</th>
+<th>SpatialLite</th>
+<th>GeoJSON</th>
+<th>FlatGeobuf</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空間インデックス</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>×</td>
+<td>○</td>
+</tr>
+<tr>
+<td>マルチレイヤ</td>
+<td>×</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>×</td>
+</tr>
+<tr>
+<td>単一ファイル</td>
+<td>×</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+</tr>
+<tr>
+<td>web対応</td>
+<td>×</td>
+<td>△</td>
+<td>△</td>
+<td>○</td>
+<td>◎</td>
+</tr>
+<tr>
+<td>ラスタ対応</td>
+<td>×</td>
+<td>○</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+</tr>
+</tbody>
+</table>
+<h3 id="esri-shapefile">ESRI Shapefile</h3>
+<p>ESRI Shapefile(以下Shapefile)は古くからベクター向け地図データとして使われてきたファイル形式です。</p>
+<p>ファイルの拡張子は<code>.shp</code>ですが、これ以外にもデータを格納する<code>.dbf</code>や、投影法などを管理するための<code>.prj</code>ファイルなどに分割されているため、一ファイルだけでは役に立たないという特徴があります。</p>
+<p>また、過去の遺産として使えるケースがありますが、日本語の扱いに問題があるケースが多いため、現在では保存形式としては推奨されていません。</p>
+<p>代わりにGeoPackageやFlatGeobufなどの最新のファイルを使うことを推奨します。</p>
+<h3 id="geopackage">GeoPackage</h3>
+<p>GeoPackageはベクター及びラスタ向けの地図データ形式で、QGIS 3系から標準の保存形式として使われています。</p>
+<p>ファイルの拡張子は<code>.dpkg</code>で、中身はSQLite3というデータベースの形式となります。</p>
+<p>GeoPackageは複数のレイヤーを一つのファイルに保存することができ、またラスタデータのレイヤーに対してはタイル形式の出力をするようになっていて、大きなラスタデータでも軽量に動かすことが可能となっています。</p>
+<p>また、大きな特徴としてQGISのスタイル設定も保存できたり、SpatialLiteの空間分析関数が使えたりと大変便利な機能があります。</p>
+<h3 id="spatiallite">SpatialLite</h3>
+<p>SpatialLiteはSQLite3の拡張機能を用いた実装で、ベクター向けの地図データ形式として使われているファイル形式です。</p>
+<p>ファイルの拡張子は<code>.db</code>や<code>.sqlite</code>、<code>.sqlite3</code>などが使われています。</p>
+<p>SpatialLiteはQGISの古いバージョンからサポートされているため、Shapefileで扱うのが困難なデータを扱うケースがありました。</p>
+<p>ただし、SpatialLiteの特徴である空間クエリがGeoPackageでもサポートされているため、現在では比較的考慮しなくても良くなりました。</p>
+<h3 id="geojson">GeoJSON</h3>
+<p>GeoJSONはJSON(JavaScript Object Notation)形式を地図に応用したファイル形式で、ベクター向けの地図データ形式として使われてるファイル形式です。</p>
+<p>ファイルの拡張子は<code>.geojson</code>です。</p>
+<p>特徴としてはJavaScriptというプログラミング言語で簡単に扱えるため、webサイトでの地図表示が簡単にできるため、インターネット上で地図を閲覧するサイトで多く使われています。</p>
+<p>また、テキストフォーマットなのでテキストエディタで作成や編集もできるという利点があります。</p>
+<p>ただし、空間インデックスを持っていないため、ファイルの全てを読む必要があり、速度としては低速でかつ、ファイルサイズも大きくなります。</p>
+<h3 id="flatgeobuf">FlatGeobuf</h3>
+<p>FlatGeobufは比較的新しいファイル形式で、単一レイヤーのベクター向けのファイル形式です。</p>
+<p>ファイルの拡張子は<code>.fgb</code>です。</p>
+<p>特徴としては<a href="https://google.github.io/flatbuffers/" target="_blank">FlatBuffers</a>によるバイナリでエンコードされたファイルで、非常に高速で動作する上、ストリーミングをサポートしているためwebサイトの地図データとして最適化されています。</p>
+<p>QGISでは3.16からサポートをしています。また編集の対応などはQGIS 3.18以降のサポートとなっているため、比較的最新のQGISを要求する所に注意が必要です。</p>
+<p>単純にShapefileをそのまま扱い安くするためにFlatGeobufを、複数のShapefileを一つにまとめたい場合はGeoPackageを、という風に使い分けると良いでしょう。</p>
+<h3 id="その他のファイル形式">その他のファイル形式</h3>
+<p>QGISでは上記以外にも様々なファイルをサポートしています。</p>
+<p>全ては記載できないため、一部のファイルを記載します。</p>
+<h4 id="geotiff">GeoTiff</h4>
+<p>写真などに地理上の座標を付与したラスタファイル形式です。</p>
+<p>ファイルの拡張子は<code>.geotiff</code>です。</p>
+<p>GeoTiffはTiffという画像ファイル形式を地図上で扱えるように拡張されたもので、航空写真や紙地図などをGIS上で扱うために使われています。</p>
+<p>写真そのものは画像として扱う場合に位置情報を持っていません。そのため、GeoTiffはジオリファレンスという仕組みを使って画像の各ピクセルに位置情報を付与します。</p>
+<p>例えば紙地図をスキャンした場合、GISではそのままでは使えないため、特徴がある点に位置情報を付与していき、ある程度の点に座標をつけたところでジオリファレンスを実施することでその画像自体が位置を持つことができます。</p>
+<p>これらの作業自体はQGISでも行う事ができ、その結果としてGeoTiffに保存するという流れになります。</p>
+<h4 id="keyhole-markup-language-kml">Keyhole Markup Language (KML)</h4>
+<p>Keyhole Markup Language(以下KML)は、Google Earthで使われている位置情報と時系列を持ったベクターデータを扱うファイル形式です。</p>
+<p>ファイルの拡張子は<code>.kml</code>です。</p>
+<p>KMLはGoogleのプロダクトでよく使われていましたが、XMLである事はファイル仕様が複雑であるため、Web上での主流としてはGeoJSONに取って代われました。</p>
+<p>ただ、KMLを出力可能なプラットフォームやアプリケーションが多く存在し、アイコンの表示を標準でサポートしている点などからも現在でも用途によっては使われています。</p>
+<h4 id="csv">CSV</h4>
+<p>CSVは表計算ソフトで使われるファイル形式です。QGISでは位置情報(緯度、軽度)を持つCSVファイルを扱うことができます。</p>
+<p>CSVファイルは例えばオープンデータなどで、座標と名称などの属性などを持つデータとして公開されているものを取り込む事が多くあります。ただし、空間インデックスを持たないため、QGISではGeoPackageやFlatGeobufなどに保存して扱うと良いでしょう。</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="opensource.html" class="navigation navigation-prev " aria-label="Previous page: オープンソースとは何か">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="project-file.html" class="navigation navigation-next " aria-label="Next page: QGISのプロジェクトファイルについて">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"QGISで扱えるデータ形式について","level":"2.3","depth":1,"next":{"title":"QGISのプロジェクトファイルについて","level":"2.4","depth":1,"path":"docs/qgis/project-file.md","ref":"docs/qgis/project-file.md","articles":[]},"previous":{"title":"オープンソースとは何か","level":"2.2","depth":1,"path":"docs/qgis/opensource.md","ref":"docs/qgis/opensource.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/qgis/data-format.md","mtime":"2021-11-27T05:48:30.262Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-11-27T05:48:44.783Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
